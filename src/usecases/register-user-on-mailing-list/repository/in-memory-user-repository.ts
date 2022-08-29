@@ -26,7 +26,7 @@ export class InMemoryUserRepository implements UserRepository {
   }
 
   async findAllUsers (): Promise<UserData[]> {
-    return null
+    return this.#repository
   }
 
   async exists (user: UserData): Promise<boolean> {
